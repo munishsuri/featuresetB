@@ -190,11 +190,11 @@ setInterval(function () {
                             // });   
 
                             var options = {
-                                url: "https://clm-sl-ans-live-ans-service-api.cfapps.eu10.hana.ondemand.com/cf/producer/v1/resource-events",
+                                url: "<yourURL>/cf/producer/v1/resource-events",
                                 method: 'POST',
                                 auth: {
-                                    user: "271fa03b-a3ad-48b0-af9b-1f6dbc7fa4c4",
-                                    password: "iKRAfLrxq8BUFvi6aJ2HL6Kte/5p0IZs"
+                                    user: "<user>",
+                                    password: "<password>"
                                 },
                                 json: {
                                     "eventType": "mycustomevent",

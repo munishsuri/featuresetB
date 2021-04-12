@@ -12,12 +12,12 @@ applications:
             [
               {
                 "name":"featuresetb",
-                "url":"https://nodebackendfsetb.cfapps.eu10.hana.ondemand.com",
+                "url":"<nodejs>",
                 "forwardAuthToken": true,
                  "timeout": 120000
               },{
                 "name":"ui",
-                "url":"https://appui.cfapps.eu10.hana.ondemand.com",
+                "url":"<ui>",
                 "forwardAuthToken": true
               }
             ]

@@ -1,0 +1,20 @@
+{   
+    "welcomeFile":"/ui/",
+    "authenticationMethod": "route",
+    "logout": {
+      "logoutEndpoint": "/do/logout"
+    },
+    "routes": [
+        {
+            "source": "^/featuresetb/(.*)$",
+            "destination": "featuresetb",
+            "target": "$1",
+            "csrfProtection": false
+        }, {
+            "source": "^/ui/(.*)$",
+            "destination": "ui",
+            "target": "$1",
+            "csrfProtection": false
+        }
+     ]
+  }

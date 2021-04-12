@@ -1,0 +1,9 @@
+applications:
+    - name: nodebackend_fsetb
+      buildpack: https://github.com/cloudfoundry/nodejs-buildpack
+      path: nodebakend
+      memory: 128M
+      services:
+        - uas
+        - businessrules_uas
+    

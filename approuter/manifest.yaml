@@ -1,0 +1,24 @@
+applications:
+    - name: approuter-featuresetb
+      path: .
+      memory: 256M
+      services:
+        - ui5-xsuaa-service
+        - destination
+      env:
+        SESSION_TIMEOUT: 120
+        timeout: 120000
+        destinations: >
+            [
+              {
+                "name":"featuresetb",
+                "url":"https://nodebackendfsetb.cfapps.eu10.hana.ondemand.com",
+                "forwardAuthToken": true,
+                 "timeout": 120000
+              },{
+                "name":"ui",
+                "url":"https://appui.cfapps.eu10.hana.ondemand.com",
+                "forwardAuthToken": true
+              }
+            ]
+    
